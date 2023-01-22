@@ -402,6 +402,15 @@ iframe{
     .page-content .page-content--text {
         width: 60%;
     }
+    
+    .contact-box{
+        width: 55%;
+    }
+
+
+    .emailLabel{
+        width: 69%;
+    }
 
     .nav-menu{
         padding: 0;
