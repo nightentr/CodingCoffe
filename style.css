@@ -46,7 +46,7 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
 
 .dark-mode .nav-menu {
     transition: all 0.6s linear;
-    box-shadow: 0px 0px 15px 5px white;
+    box-shadow: none;
 
 }
 
@@ -421,6 +421,11 @@ iframe{
 
     }
     
+    .dark-mode .nav-menu {
+        transition: all 0.6s linear;
+        box-sizing: 3;
+    }
+
 }
 @media only screen and (min-width: 900px){
     .cards-list{
