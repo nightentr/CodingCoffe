@@ -15,6 +15,11 @@ body.dark-mode{
 
 .dots {
     visibility: 1%;
+    color: white;
+}
+
+.dark-mode .dots {
+    color: black;
 }
 
 /* Navigation menu */
@@ -403,6 +408,24 @@ iframe{
         width: 80%;
         box-shadow: none;
     }
+
+    #mode-toggle {
+        background-image: url(images/dark-white.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+        border-radius: 60%;
+        position: absolute;
+        top: 14px;
+        right: 15px;
+        width: 29px;
+        height: 30px;
+        transition: transform 0.3s linear;
+        border: 2px solid gray;
+        box-shadow: none;
+        z-index: 100;
+    }
+
 }
 
 @media only screen and (min-width: 600px){
