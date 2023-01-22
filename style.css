@@ -407,6 +407,7 @@ iframe{
         padding: 0;
         width: 80%;
         box-shadow: none;
+        position: sticky;
     }
 
     .dark-mode .nav-menu {
@@ -418,6 +419,7 @@ iframe{
         padding: 0;
         line-height: 40px;
         box-shadow: none;
+        position: sticky;
     }
 }
 
