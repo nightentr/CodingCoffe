@@ -416,7 +416,7 @@ iframe{
 
     .nav-menu{
         padding: 0;
-        width: 100%;
+        line-height: 40px;
         box-shadow: none;
     }
 }
