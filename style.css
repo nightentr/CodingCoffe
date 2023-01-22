@@ -382,8 +382,8 @@ iframe{
 
 }
 
-
-@media only screen and (max-width: 600px){
+/* here is media yeah */
+@media only screen and (max-width: 600px){ 
     .jumbotron-section h1{
         margin: 5px 30px !important;
         font-size: 1.2em;
@@ -411,6 +411,12 @@ iframe{
 
     .dark-mode .nav-menu {
         transition: all 0.6s linear;
+        box-shadow: none;
+    }
+
+    .nav-menu{
+        padding: 0;
+        width: 100%;
         box-shadow: none;
     }
 }
