@@ -83,7 +83,7 @@ function generateCard(project){
   description.textContent = project.description
   cardContent.append(description)
   const cardBtn = document.createElement('button')
-  cardBtn.textContent = 'Open Project'
+  cardBtn.textContent = 'Open'
   cardBtn.onclick = function(){
     location.href = project.link
   }

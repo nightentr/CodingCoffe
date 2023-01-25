@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-repeat: no-repeat;
-    transition: all 0.4s linear;
+    transition: all 0.5s linear;
 }
 
 /*  Dark mode for body*/
@@ -30,7 +30,7 @@ body.dark-mode{
     justify-content: center;
     align-items: center;
     padding: 19px;
-    width: 100%;
+    width: 99%;
     margin: 0;
     list-style: none;
     font-size: 20px;
@@ -39,7 +39,7 @@ body.dark-mode{
     z-index: 50;
     color: black;
 
-text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+text-shadow: 1px 0px 1px #cccccc93, 0px 1px 1px #eeeeee7c, 2px 1px 1px #cccccc57, 1px 2px 1prgba(238, 238, 238, 0.445)EE, 3px 2px 1px #cccccc33, 2px 3px 1px #eeeeee33, 4px 3px 1px #cccccc52, 3px 4px 1prgba(238, 238, 238, 0.219)EE, 5px 4px 1px #cccccc6c, 4px 5px 1px #eeeeee5b, 6px 5px 1px #cccccc70, 5px 6px 1prgba(238, 238, 238, 0.37)EE, 7px 6px 1px #cccccc7c;
 }
 
 /* dark mode nav menu */
@@ -60,12 +60,12 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
 
 .nav-menu .nav-link {
     text-decoration: none;
-    color: rgb(70, 239, 248);
+    color: rgb(2, 121, 128);
 
 }
 
 .dark-mode .nav-menu .nav-link  {
-    color: white;
+    color: rgb(240, 240, 240);
     
 }
 
@@ -88,17 +88,34 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s linear;
-    border: 4px solid gray;
-    box-shadow: 3px 4px 0px 0px rgba(131, 131, 131, 0.928);
-    z-index: 100;
+    width: 31px;
+    height: 31px;
+    border: 4px solid rgb(7, 7, 7);
+    box-shadow: 3px 4px 0px 0px rgba(204, 204, 204, 0.928);
+    z-index: 99999;
+    transition: all 0.4s linear;
 }
 
 #mode-toggle:hover {
     cursor: pointer;
     transform: rotate(360deg);
+}
+
+.dark-mode #mode-toggle {
+    background-image: url(images/dark-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    width: 31px;
+    height: 31px;
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: 3px 4px 0px 0px rgba(114, 114, 114, 0.928);
+    z-index: 99999;
+    transition: all 0.4s linear;
 }
 
 .white {
@@ -175,7 +192,7 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
        filter: sepia(0%);
     }
     50%{
-        filter: sepia(100%);
+        filter: sepia(46%);
     }
     100%{
         filter: sepia(0%);
@@ -193,7 +210,7 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
 .jumbotron-section h1,
 .jumbotron-section p{
     font-weight: 400;
-    z-index: 1;
+    z-index: 23;
 }
 
 button{
@@ -282,7 +299,7 @@ button{
     width: 100%;
     text-transform: uppercase;
     cursor: pointer;
-    line-height: 40px;
+    line-height: 41px;
     transition: all 0.4s linear;
 }
 .card .card-content button:hover {
@@ -409,12 +426,12 @@ iframe{
 
 
     .emailLabel{
-        width: 69%;
+        width: 70%;
     }
 
     .nav-menu{
         padding: 0;
-        width: 80%;
+        width: 79%;
         box-shadow: none;
         position: sticky;
     }
@@ -426,7 +443,7 @@ iframe{
 
     .nav-menu{
         padding: 0;
-        line-height: 40px;
+        line-height: 48px;
         box-shadow: none;
         position: sticky;
     }
@@ -439,7 +456,7 @@ iframe{
     }
     
     .dark-mode .nav-menu {
-        transition: all 0.6s linear;
+        transition: all 0.52s linear;
         box-sizing: 3;
     }
 
@@ -448,6 +465,33 @@ iframe{
     .cards-list{
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
+    .dark-mode .nav-menu {
+        transition: all 0.9s linear;
+        box-shadow: none;
+    }
+
+    .nav-menu{
+        padding: 0;
+        line-height: 62px;
+        box-shadow: none;
+        position: sticky;
+    }
+
+    .page-content .page-content--img,
+    .page-content .page-content--text {
+        width: 73%;
+    }
+    
+    .contact-box{
+        width: 65%;
+    }
+
+
+    .emailLabel{
+        width: 84%;
+    }
+
 }
 
 /* Start button section
@@ -468,7 +512,7 @@ iframe{
 	border:1px solid #d6bcd6;
 	display:inline-block;
 	cursor:pointer;
-	color:#3a8a9e;
+	color:#2b778a;
 	font-family:Arial;
 	font-size:17px;
 	padding:7px 25px;
